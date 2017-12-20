@@ -1,0 +1,21 @@
+package tkedziora.exercises.flowcontrol;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is 12+12?");
+        int answer = scanner.nextInt();
+
+        if (answer == 24) {
+            boolean a = true;
+            System.out.println(a);
+        } else {
+            boolean b = false;
+            System.out.println(b);
+        }
+
+    }
+}
