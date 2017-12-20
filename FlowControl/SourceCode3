@@ -1,0 +1,65 @@
+package tkedziora.exercises.flowcontrol;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        double weight;
+
+        int opt;
+
+        Scanner in = new Scanner(System.in);
+
+
+        System.out.print("Please enter your current earth weight : ");
+
+        weight = in.nextFloat();
+
+        System.out.println();
+
+
+        System.out.println("I have information for the following planets :");
+
+        System.out.println("1. Venus 2. Mars 3. Jupiter  4. Saturn 5. Uranus 6. Neptune, which planet " +
+                "are you visiting : ");
+
+        opt = in.nextInt();
+
+        DecimalFormat df = new DecimalFormat("###.##");
+
+        switch (opt) {
+            case 1:
+                float a = 0.78f;
+                weight = weight * a;
+                System.out.println("Your weight in pounds : " + df.format(weight));
+                break;
+            case 2:
+                float b = 0.39f;
+                weight = weight * b;
+                System.out.println("Your weight in pounds : " + df.format(weight));
+                break;
+            case 3:
+                float c = 2.65f;
+                weight = weight * c;
+                System.out.println("Your weight in pounds : " + df.format(weight));
+                break;
+            case 4:
+                float d = 1.17f;
+                weight = weight * d;
+                System.out.println("Your weight in pounds : " + df.format(weight));
+                break;
+            case 5:
+                float e = 1.05f;
+                weight = weight * e;
+                System.out.println("Your weight in pounds : " + df.format(weight));
+                break;
+            case 6:
+                float f = 1.23f;
+                weight = weight * f;
+                System.out.println("Your weight in pounds : " + df.format(weight));
+                break;
+        }
+    }
+}
