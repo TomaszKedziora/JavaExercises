@@ -1,0 +1,58 @@
+package tkedziora.exercises.arithmetic;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the amount :");
+        int a = sc.nextInt();
+
+        int thousand = a / 1000;
+        a = a - (thousand * 1000);
+        if (thousand != 0) {
+            System.out.println("No of 1000 notes are " + thousand);
+        }
+        int fiveHundred = a / 500;
+        a = a - (fiveHundred * 500);
+        if (fiveHundred != 0) {
+            System.out.println("No of 500 notes are " + fiveHundred);
+        }
+        int hundred = a / 100;
+        a = a - (hundred * 100);
+        if (hundred != 0) {
+            System.out.println("No of 100 notes are " + hundred);
+        }
+        int fifty = a / 50;
+        a = a - (fifty * 50);
+        if (fifty != 0) {
+            System.out.println("No of 50 notes are " + fifty);
+        }
+        int twenty = a / 20;
+        a = a - (twenty * 20);
+        if (twenty != 0) {
+            System.out.println("No of 20 notes are " + twenty);
+        }
+        int ten = a / 10;
+        a = a - (ten * 10);
+        if (ten != 0) {
+            System.out.println("No of 10 notes are " + ten);
+        }
+        int five = a / 5;
+        a = a - (five * 5);
+        if (five != 0) {
+            System.out.println("No of 5 notes are " + five);
+        }
+        int two = a / 2;
+        a = a - (two * 2);
+        if (two != 0) {
+            System.out.println("No of 2 notes are " + two);
+        }
+        int one = a / 1;
+        a = a - (one * 1);
+        if (one != 0) {
+            System.out.println("No of 1 notes are " + one);
+        }
+    }
+}
