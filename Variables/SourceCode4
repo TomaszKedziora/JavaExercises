@@ -1,0 +1,12 @@
+package tkedziora.exercises.variables;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int minimum = Integer.MIN_VALUE;
+        int maximum = Integer.MAX_VALUE;
+
+        System.out.println(minimum);
+        System.out.println(maximum);
+    }
+}
