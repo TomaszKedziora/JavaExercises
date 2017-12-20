@@ -1,0 +1,27 @@
+package tkedziora.exercises.arithmetic;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum;
+
+        System.out.println("Enter the 1st number:");
+        int num1 = scanner.nextInt();
+        System.out.println("Enter the 2nd number:");
+        int num2 = scanner.nextInt();
+
+        sum = num1 + num2;
+
+        int sum2 = String.valueOf(sum).length();
+        int num11 = String.valueOf(num1).length();
+
+        if (sum2 == num11) {
+            System.out.println("Result: " + sum);
+        } else if (sum2 > num11) {
+            System.out.println("Result: " + num1);
+        }
+    }
+}
