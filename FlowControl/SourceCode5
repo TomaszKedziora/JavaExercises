@@ -1,0 +1,24 @@
+package tkedziora.exercises.flowcontrol;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Is it a weekday today?(true or false):");
+        boolean w = scanner.nextBoolean();
+        System.out.print("Are you on a vacation?(true or false):");
+        boolean v = scanner.nextBoolean();
+
+        if (w == true && v == true) {
+            System.out.println("You can sleep.");
+        } else if (w == true && v == false) {
+            System.out.println("You cannot sleep.");
+        } else if (w == false && v == true) {
+            System.out.println("You can sleep.");
+        } else if (w == false && v == false) {
+            System.out.println("You can sleep.");
+        }
+    }
+}
