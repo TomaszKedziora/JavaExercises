@@ -1,0 +1,20 @@
+package tkedziora.exercises.loops;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int total = 0;
+        int number;
+        Scanner scan = new Scanner(System.in);
+
+        for (int i = 1; i <= 5; i++) {
+
+            number = scan.nextInt();
+            total = total + number;
+        }
+
+        System.out.println("Total is:" + total);
+    }
+}
