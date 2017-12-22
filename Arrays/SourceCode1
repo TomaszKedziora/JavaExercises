@@ -1,0 +1,27 @@
+package tkedziora.exercises.arrays;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+
+        System.out.print("Enter a string:");
+        String s = scanner.next();
+
+        char[] str = s.toCharArray();
+
+        int len = str.length;
+        char[] marlenka = new char[len];
+
+        for (int i = len - 1; i >= 0; i--) {
+
+            marlenka[sum] = str[i];
+            sum++;
+        }
+        str = marlenka;
+        System.out.println(str);
+    }
+}
