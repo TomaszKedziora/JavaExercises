@@ -1,0 +1,23 @@
+package tkedziora.exercises.methods;
+
+import java.util.Scanner;
+
+public class Challenge {
+
+    public static double number, answer;
+
+    public static void calculateSquare(double number) {
+        number = Math.sqrt(number);
+        answer = Math.round(number);
+    }
+
+    public static void main(String[] args) {
+
+        Challenge challenge = new Challenge();
+        final Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        number = sc.nextDouble();
+        challenge.calculateSquare(number);
+        System.out.println("The square root is: " + ((int) answer));
+    }
+}
