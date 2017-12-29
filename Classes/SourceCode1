@@ -1,0 +1,29 @@
+package tkedziora.exercises.classes;
+
+import java.util.Scanner;
+
+public class Main {
+    public String name;
+    public String age;
+
+    public Main(String name, String age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the name:");
+        String name = scanner.next();
+        System.out.print("Enter the age:");
+        String age = scanner.next();
+
+        Main test = new Main(name, age);
+        System.out.println(test);
+    }
+
+    public String toString() {
+        return ("Name=>" + name + " and " + "Age=>" + age);
+    }
+}
