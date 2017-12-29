@@ -1,0 +1,27 @@
+package tkedziora.exercises.inheritance;
+
+public class Main extends Counter {
+
+    public static void main(String[] args) {
+        Counter object = new Counter();
+
+        for (int a = 0; a < 3; a++) {
+            object.increment();
+        }
+        object.print();
+    }
+}
+
+class Counter {
+
+    int i = 0;
+
+    Counter increment() {
+        i++;
+        return this;
+    }
+
+    void print() {
+        System.out.println("i = " + i);
+    }
+}
