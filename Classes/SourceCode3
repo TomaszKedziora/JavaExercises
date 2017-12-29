@@ -1,0 +1,35 @@
+package tkedziora.exercises.classes;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        System.out.println("Enter radius:");
+        double rad = scanner.nextDouble();
+        System.out.println("Enter color:");
+        String col = scanner.next();
+
+        MyCircle mc = new MyCircle(rad, col);
+
+        System.out.println(mc.getArea());
+        System.out.println(mc.color);
+    }
+}
+
+class MyCircle {
+    final double PI = Math.PI;
+    double radius;
+    String color;
+
+    public MyCircle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    public double getArea() {
+        return PI * (radius * radius);
+    }
+}
