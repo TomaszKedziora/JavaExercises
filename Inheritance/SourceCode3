@@ -1,0 +1,36 @@
+package tkedziora.exercises.inheritance;
+
+import java.util.Scanner;
+
+class Apple {
+    int number_of_items;
+}
+
+class Banana extends Apple {
+    int number_of_items;
+
+    public Banana(int apple, int banana) {
+        super.number_of_items = apple;
+        this.number_of_items = banana;
+    }
+
+    void show() {
+        System.out.println("Number of apples: " + super.number_of_items);
+        System.out.println("Number of bananas: " + this.number_of_items);
+    }
+}
+
+public class Main {
+
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of apples:");
+        int num1 = scanner.nextInt();
+        System.out.println("Enter the number of bananas:");
+        int num2 = scanner.nextInt();
+        Banana obj = new Banana(num1, num2);
+        obj.show();
+
+    }
+}
