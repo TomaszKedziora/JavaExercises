@@ -1,0 +1,37 @@
+package tkedziora.exercises.classes;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Author aut;
+
+        System.out.println("Enter name:");
+        String somename = scanner.nextLine();
+
+        System.out.println("Enter email:");
+        String semail = scanner.nextLine();
+
+        System.out.println("Enter book name:");
+        String sbook = scanner.nextLine();
+
+        aut = new Author(somename, semail, sbook);
+
+        System.out.println(aut.name + "\n" + aut.email + "\n" + aut.book);
+
+    }
+}
+
+class Author {
+    String name;
+    String email;
+    String book;
+
+    public Author(String name, String email, String book) {
+        this.name = name;
+        this.email = email;
+        this.book = book;
+    }
+}
