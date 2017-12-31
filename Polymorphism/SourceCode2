@@ -1,0 +1,28 @@
+package tkedziora.exercises.polymorphism;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Overload overload = new Overload();
+        int result;
+        overload.test(10);
+        overload.test(10, 20);
+        result = overload.test('a');
+        System.out.println("Result " + result);
+    }
+}
+
+class Overload {
+    public void test(int a) {
+        System.out.println("a " + a);
+    }
+
+    public void test(int a, int b) {
+        System.out.println("a and b " + a + " " + b);
+    }
+
+    public char test(char a) {
+        System.out.println("char " + a);
+        return a;
+    }
+}
