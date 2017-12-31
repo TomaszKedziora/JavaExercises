@@ -1,0 +1,21 @@
+package tkedziora.exercises.exceptions;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        int num;
+
+        System.out.println("Enter the ID number:");
+        input = scanner.next();
+        if (input.length() == 10 && input.matches("[0-9]+")) {
+            System.out.println("correct");
+        } else {
+            System.out.println("incorrect");
+        }
+
+    }
+}
