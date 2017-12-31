@@ -1,0 +1,27 @@
+package tkedziora.exercises.exceptions;
+
+class ExceptionA extends Exception {
+}
+
+class ExceptionB extends ExceptionA {
+}
+
+class ExceptionC extends ExceptionB {
+}
+
+class Main {
+
+    public static void main(String args[]) {
+        try {
+            throw new ExceptionC();
+        } catch (ExceptionA a) {
+            System.out.println(a);
+        }
+        try {
+            throw new ExceptionB();
+        } catch (ExceptionA a) {
+            System.out.println(a);
+        }
+        System.exit(0);
+    }
+}
